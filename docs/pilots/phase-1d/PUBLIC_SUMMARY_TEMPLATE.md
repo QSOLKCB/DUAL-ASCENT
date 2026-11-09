@@ -8,7 +8,9 @@
 - Material versions and date: **TBD**
 - Independent methodology reviewers (count only, no names): **NOT_RUN**
 - Reviewers exposed to code oracle before scoring (count, if recorded): **NOT_RUN**
-- Actual operator timed repetitions (count only): **NOT_RUN**
+- Human operators (count only, no names): **NOT_RUN**
+- Trial structure (which methods each operator performed, without identifiers): **NOT_RUN**
+- Actual operator timed repetitions (count by method): **NOT_RUN**
 - Authorized measurement reviewer confirmation held privately: **NOT_RUN**
 - Research ethics determination (public non-identifying status): **NOT_OBTAINED**
 
@@ -32,10 +34,13 @@
 | Errors recorded | **NOT_RUN** | **NOT_RUN** |
 | Corrections and unresolved failures | **NOT_RUN** | **NOT_RUN** |
 | Method order and interruptions documented | **NOT_RUN** | **NOT_RUN** |
+| Invalid/missing trials and protocol deviations | **NOT_RUN** | **NOT_RUN** |
+| Instruction changes during or after the exercise | **NOT_RUN** | **NOT_RUN** |
 
 ## Outcome and limits
 
 - Qualitative result: **PENDING HUMAN REVIEW**
+- Timing limitations, including order, familiarity and pairing effects: **NOT_RUN**
 - Was the existing paper/CSV workflow adequate? **NOT_DETERMINED**
 - Is a new software tool warranted? **NO BUILD AUTHORIZED**
 - Is any participant study approved? **NO**

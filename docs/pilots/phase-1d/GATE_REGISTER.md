@@ -21,7 +21,7 @@ This register differentiates **preparing a task**, **actually doing it**, and **
 ## Stop / go decisions
 
 - **REVISE**: missing external signatures, study parity, evidence of timing, or validated scoring.
-- **GO for synthetic-method calibration**: independent reviewers and the timed operator exercise have actually completed and all critical shortcomings are transparently recorded. This does not mean **GO for live study**.
+- **GO for synthetic-method calibration**: gates 1D-02 through 1D-04 are resolved: two independent reviewers can apply the approved/revised rubric under predeclared agreement and adjudication rules, and the timed operator exercise has actual evidence. Any blocking scoring ambiguity remains **REVISE** even if the sheets and timing exercise were completed. This does not mean **GO for live study**.
 - **GO for human participant study**: separate ethics determination, consent, qualified lead, pre-registration, version-locked instruments and appropriate safeguards are evidenced; subject to an explicit external authorization.
 - **BUILD / NO BUILD (separate)**: a new application remains unauthorized unless the manual experiment reveals meaningful recurring problems demonstrably solved by a bounded, local, privacy-preserving instrument.
 - **STOP**: absent a real beneficiary, unacceptable risk, non-reproducible tasks or unnecessary infrastructure.
