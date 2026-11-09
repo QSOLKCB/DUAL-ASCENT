@@ -17,9 +17,9 @@ Executed locally under **CPython 3.13.5, Linux**, using the standard library:
 uv run --no-project python -I -B -m unittest discover -s tests -v
 ```
 
-Observed output: **3 test methods passed** with no errors (0.001 s reported). The main test compares **8 named scenarios × 3 fixed synthetic vignettes = 24 observed behaviours**, using subtests. Two further checks verify the missing artifact keeps blank scores and the case register omits assignment labels. No GitHub Actions execution, participant testing, independent human rating or stopwatch data is claimed.
+Observed output: **3 test methods passed** with no errors (0.001 s reported). The main test compares **8 named scenarios × 3 fixed synthetic vignettes = 24 observed behaviours**, using subtests. Two further checks verify that the missing artifact keeps blank scores and that matching the public sample does not imply success on an alternate input. No GitHub Actions execution, participant testing, independent human rating or stopwatch data is claimed.
 
-The Python file is a **line-by-line transcription of the public MV-A/B/C functions with function names changed**. It does not execute arbitrary downloaded code, fetch repository files, process participant submissions, call AI providers or ingest private artifacts. The GitHub blob of the committed test source matched the identical locally executed file: `258ee292027f39d139bb5fdcee9cc93a0b6743db`. This is a **Git object ID**, not a SHA-256 research attestation.
+The Python file is a **line-by-line transcription of the public MV-A/B/C functions with function names changed**. It does not execute arbitrary downloaded code, fetch repository files, process participant submissions, call AI providers or ingest private artifacts. The GitHub blob of the committed test source matched the identical locally executed file: `7401bd52c9b3bcf38f19fe560aea609b94dd4f07`. This is a **Git object ID**, not a SHA-256 research attestation.
 
 ## Observed 8 × 3 matrix
 
