@@ -1,0 +1,5 @@
+event_id,packet_or_study_id,event_type,occurred_at,coordinator_disposition,authorization_status
+DEMO-001,PKT-002,FOLLOWUP_MISSING,SYNTHETIC,retain_missing_indicator,DEMO_ONLY
+DEMO-002,PKT-003,WITHDRAWN,SYNTHETIC,pause_use_and_seek_approved_disposition,BLOCKED_GOVERNANCE
+DEMO-003,PKT-004,UNBLINDING,SYNTHETIC,reject_packet_until_remasked,DEMO_ONLY
+DEMO-004,SYN-005,POLICY_LEAKAGE,SYNTHETIC,flag_scaffolded_policy_failure,DEMO_ONLY
