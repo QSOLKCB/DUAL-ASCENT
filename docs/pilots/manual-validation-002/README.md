@@ -14,6 +14,8 @@ This pack follows [tabletop-001's recorded REVISE decision](../tabletop-001/BUIL
 4. An operator conducts the [timed manual-workflow rehearsal](TIMED_OPERATOR_PROTOCOL.md) with fabricated records; enter *actual observed* clock times, errors, and recoveries in a local copy of [OPERATOR_LOG_TEMPLATE.csv](OPERATOR_LOG_TEMPLATE.csv). **No timings are prefilled.**
 5. Review [governance and decision gate](DECISION_GATE.md) after the prior steps; mark each gate PASS, FAIL, BLOCKED or NOT_RUN with direct evidence.
 
+The [structural validation record](VALIDATION_RECORD.md) documents the four CSV header/row checks actually run against the committed files. It explicitly does not claim that the reviewer exercise or timed operator procedure was executed.
+
 ## Public repository limitations
 
 The exercises and their response code are publicly accessible. Because the synthetic coordinator key was also public in tabletop-001, this package **cannot prove genuine concealed allocation, confidential evaluation, or prospectively blinded human-subject research**. Role separation below is a procedural rehearsal only.
