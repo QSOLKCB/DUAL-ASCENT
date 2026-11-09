@@ -2,7 +2,7 @@
 
 **Date:** 2026-11-09  
 **Decision:** **REVISE** study readiness; **DO NOT AUTHORIZE SOFTWARE IMPLEMENTATION**.  
-**Decision scope:** synthetic technical / documentation preflight only; the independent research [REVISE recommendation](../research/DECISION_RECORD.md) remains controlling.
+**Decision scope:** synthetic technical / documentation preflight only; the independent research [REVISE recommendation](../../research/DECISION_RECORD.md) remains controlling.
 
 ## Decision under test
 
