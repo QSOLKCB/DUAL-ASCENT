@@ -104,9 +104,10 @@ class CalibrationChecks(unittest.TestCase):
         self.assertEqual(missing["status"], "FOLLOWUP_MISSING")
         self.assertTrue(all(missing[key] == "" for key in ("C", "R", "E")))
 
-    def test_observations_do_not_include_a_study_arm(self):
-        self.assertEqual(sorted(CASES), sorted(set(CASES)))
-        self.assertNotIn("assigned_arm", CASES)
+    def test_memorized_example_does_not_generalize(self):
+        # MV-A and MV-C agree on the visible sample but diverge when values change.
+        self.assertEqual(mv_a(EXAMPLE), mv_c(EXAMPLE))
+        self.assertNotEqual(mv_a(VALID_ALTERNATE), mv_c(VALID_ALTERNATE))
 
 
 if __name__ == "__main__":
