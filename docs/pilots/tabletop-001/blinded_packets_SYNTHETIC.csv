@@ -1,0 +1,5 @@
+packet_id,visit,form_id,outcome_status,minutes,blinded_artifact_ref
+PKT-001,delayed,D-DEMO,submitted,18,ART-001
+PKT-002,delayed,D-DEMO,missing,,
+PKT-003,delayed,D-DEMO,withdrawn,,
+PKT-004,delayed,D-DEMO,rejected_unblinding,,

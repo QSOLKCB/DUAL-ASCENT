@@ -1,0 +1,2 @@
+packet_id,rater_opaque_id,rubric_version,C,R,E,scoring_status,deviation_code
+PKT-001,RATER-Y,DRAFT-0.1,3,2,3,SYNTHETIC_EXAMPLE,NONE

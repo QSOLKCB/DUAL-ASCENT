@@ -9,6 +9,12 @@
 3. [Blind scoring and manual records](EXP-002_SCORING.md) — task-specific scoring rubric, separation of assignment key, minimized data ledger, missingness, adjudication, and toy dry-run.
 4. [Preflight and go/no-go checklist](EXP-002_PREFLIGHT.md) — tabletop rehearsal, reviewer sign-offs, known open decisions and protocol deviation ledger.
 
+## Tabletop-001 — completed limited synthetic rehearsal
+
+[Open the documented synthetic tabletop rehearsal](tabletop-001/README.md), its [executed checks and unresolved cases](tabletop-001/RESULTS.md), and its [REVISE / no-build decision](tabletop-001/BUILD_DECISION.md).
+
+The agent created five fictional CSV worksheets and checked structural integrity and selected error cases. The tabletop case register records **7 narrowly scoped PASS checks, 2 BLOCKED cases, and 1 NOT_RUN case**. This is not a passed study-readiness gate, a human pilot, or a human learning result. The timed human manual-workflow comparison and independent rater/ethics review remain outstanding.
+
 ## Permitted next action
 
 Perform a **synthetic tabletop dry-run** of the proposed worksheets and rater packet. Record ambiguities, revisions, and time burden with fictitious IDs. Do not infer any human-learning outcome from it.
