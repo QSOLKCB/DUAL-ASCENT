@@ -1,37 +1,52 @@
 # DUAL-ASCENT Roadmap and Release Gates
 
-> **Status:** Provisional research-roadmap staging draft, 2026-11-09. Based on Monica's revision-two roadmap, with **EXP-005 — The Orchestrator Paradox** added as a candidate study. Monica's third-pass research and independent review remain pending. This branch is not approval to run human-participant experiments or ship an implementation.
+## Recommendation-aligned sequencing
 
-## Governing decision
+The recommendation is **REVISE**, not immediate software implementation. The first deliverable is a documentation-only review package. A software milestone is justified only if the manual/pilot protocol demonstrates that reproducible local records and receipts change a real decision better than a notebook or spreadsheet.
 
-**REVISE — documentation and manual pilot first.** DUAL-ASCENT investigates whether AI-assisted workflows improve useful outcomes while preserving human understanding, agency, and independent skill. A useful study is not established by building software, opening more agent tabs, or increasing output volume.
+```mermaid
+flowchart TD
+  A[Phase 0: Documentation-only review] --> B{Named decision and manual-protocol comparison pass?}
+  B -- No --> Z[STOP or remain documentation-only]
+  B -- Yes --> C[Phase 1: Ethics and protocol readiness]
+  C --> D{Approval, consent, and measurement review pass?}
+  D -- No --> R[REVISE protocol]
+  D -- Yes --> E[Phase 2: Minimal synthetic implementation]
+  E --> F{Deterministic privacy/integrity tests pass?}
+  F -- No --> R
+  F -- Yes --> G[Phase 3: Consented pilot]
+  G --> H{Reliability, burden, and decision utility pass?}
+  H -- No --> Z
+  H -- Yes --> I[Phase 4: Preregistered confirmatory study]
+  I --> J[Conditional v0.1.0 research-kit release]
+```
 
-Before any software implementation, identify the human decision to be improved, its beneficiary, a disconfirming result, and why a manual protocol would be inadequate. No claims about effects on human intelligence, mental health, or creative identity are warranted by synthetic-code tests.
-
-## Phases and release gates
+## Phases
 
 | Phase | Deliverable | Exit gate | Stop/defer trigger |
 |---|---|---|---|
-| 0. Documentation-only review | Evidence register, protocols, decision record, roadmap, reviewable docs PR after Monica rev3. | A named decision, beneficiary, falsification rule, and manual-protocol comparison. | The project merely celebrates tool use without informing a decision. |
-| 1. Study readiness | Applicable ethics/IRB determination, consent, privacy and retention rules, preregistration drafts, blind scoring rubrics. | Written authorization/determination and reviewed measurement plan. | Participant safeguards or valid measurement cannot be established. |
-| 2. Synthetic MVP (conditional) | Local contracts, deterministic receipts, fixtures, and static offline reports. | Tests and privacy/integrity gates pass; software has proven incremental utility. | A paper/notebook/spreadsheet is adequate; surveillance or telemetry would be needed. |
-| 3. Consented feasibility pilot | Small approved manual or minimal-tool pilot of one prioritized protocol. | Acceptable burden, reliable scoring, intact safeguards, useful decisions. | Reliability, participant protection, or decision value is inadequate. |
-| 4. Confirmatory research (conditional) | Preregistered, independently evaluated experiments with null and negative outcomes retained. | Valid comparison, uncertainty estimates, and reproducible analysis. | No practicable advantage or unacceptable trade-off. |
-| 5. Conditional v0.1.0 research-kit release | Offline protocol-integrity kit, not a diagnosis or employee monitoring tool. | Evidence boundaries, license, security/privacy and technical gates met. | Synthetic test success is misrepresented as human benefit. |
+| 0. Documentation-only review | This research package, evidence register, protocols, decision record, PR plan. | Reviewer confirms at least one decision, beneficiary, disconfirming outcome, and manual-protocol comparison. | No decision changes based on evidence; project remains a celebration of tools. |
+| 1. Study readiness | Ethics/IRB determination, consent text, retention/withdrawal policy, preregistration draft, scoring rubric, model data-flow review. | Written authorization/determination, protocol owner, adverse-event contact, and approved data inventory. | Cannot meet consent/privacy requirements or intended study is not ethically defensible. |
+| 2. Synthetic MVP | Contracts, receipts, static dashboard, fixtures, unit/integration tests; no live participant workflow. | All deterministic acceptance tests green and no external network assets. | Software introduces data collection/telemetry/diagnostic score or manual workflow is simpler. |
+| 3. Pilot | Small approved feasibility study, not efficacy claim. | Predeclared rater agreement, acceptable burden/attrition, verified receipts, and a decision-utility review. | Low measurement reliability, harmful burden, privacy confusion, or no advantage over manual protocol. |
+| 4. Confirmatory research | Preregistered EXP-001–004 in priority order, independent scoring and full reporting. | Results include raw distributions, CIs, negative outcomes, deviations, and reproducible analysis. | Evidence fails to support practical utility or reveals unacceptable trade-off. |
+| 5. Conditional v0.1.0 release | Local protocol-integrity kit with synthetic examples and explicit limitations. | Security/privacy review, license review, all tests, study-readiness documentation, and decision record approval. | Any assertion of human benefit rests only on synthetic/code tests. |
 
-## Experiment prioritization
+## Prioritization
 
-Do not run experiments in parallel merely because they are listed. The original revision-two priorities remain intact until an independently reviewed protocol changes them.
+Do not run EXP-001–004 simultaneously; EXP-005 is an additional unranked candidate. Begin with EXP-002 because it has the clearest near-term decision, strongest directly relevant evidence, objective held-out outcomes, and an accessible manual pilot. EXP-001 follows only if a team actually faces a goal-versus-capability workflow choice. EXP-003 requires creative-work consent and robust rating design; EXP-004 is last because it is a benchmark of observable next-action prediction, not a test of agency.
 
-| Priority | Experiment | Current focus | Gate |
+| Priority | Experiment | Why | Required proof before next step |
 |---:|---|---|---|
-| 1 | **EXP-002 — Independent Skill Transfer** | Assistance style versus delayed unaided performance. | Ethical held-out assessment and reliable scoring. |
-| 2 | **EXP-001 — Goal-First vs Tool-First** | Human-defined goals, deliberate exploration and tool-driven projects. | Real beneficiary and blind usefulness rubric. |
-| 3 | **EXP-003 — Creative Identity and Authorship** | Distinctiveness, creative meaning, and diversity without a single creativity score. | Consent, privacy and rater reliability. |
-| 4 | **EXP-004 — Prospective Intention Prediction** | Precommitted next-action predictions versus baselines. | Leakage-resistant commitments and agreed action taxonomy. |
-| **Candidate; unranked** | **EXP-005 — The Orchestrator Paradox** | Agent concurrency versus human review and control. | Literature review, valid workload control, ethical feasibility and reviewer-capacity measures. |
+| 1 | EXP-002 | Tests the strongest, most actionable trade-off: task help versus independent transfer. | Feasible held-out assessment and ethical assistance constraints. |
+| 2 | EXP-001 | Tests the motivating ordering claim without pathologizing exploration. | Valid manipulation and a real beneficiary/usefulness rubric. |
+| 3 | EXP-003 | Addresses identity/diversity with explicitly plural outcomes. | Rater reliability and creative-work privacy safeguards. |
+| 4 | EXP-004 | Technically auditable but risks anthropomorphic overclaim. | Precommitment/leakage audit and action-taxonomy agreement. |
+| Candidate | **EXP-005** | Parallel AI-agent oversight and verified throughput; **not assessed in Monica rev3**. | Independent literature review, task-matching design, ethics and manual feasibility. |
 
-## EXP-005 — The Orchestrator Paradox
+> **Editorial note (2026-11-09):** EXP-005 below was proposed by QSOL-IMC after Monica's revision-three research package. Its hypotheses and methods are **not** part of Monica's independent evidence review. They remain provisional, and require their own literature, ethics, and measurement review before study registration.
+
+## EXP-005 — The Orchestrator Paradox (provisional post-rev3 addition)
 
 **Research question:** At what level of concurrent AI-agent work, if any, does additional parallelism cease improving *verified* human-directed outcomes, or begin impairing a human operator's ability to understand, review, and control the work?
 
@@ -85,15 +100,21 @@ No automatic observation of employee activity, scraping browser tabs, covert tim
 
 Request an independent EXP-005 literature and methods appendix that challenges these hypotheses; proposes a feasible, ethically reviewable controlled design; evaluates whether four concurrency levels are appropriate; and explicitly recommends **GO / REVISE / STOP** for this candidate independently of the larger DUAL-ASCENT implementation decision. Reconcile this draft with the authoritative rev3 research roadmap before any documentation PR or merge.
 
-## Existing release criteria retained
 
-- **G0 — Documentation integrity:** Empirical assertions map to an evidence register. Proposed methods are labeled proposals.
-- **G1 — Decision utility:** A real beneficiary and falsifiable use decision exist; a manual alternative is compared.
-- **G2 — Participant protection:** Consent, ethics determination, withdrawals, retention and data flow are reviewed before collecting any study data.
-- **G3 — Technical integrity:** Strict schemas, tamper tests, output escaping, no-network reports and CI pass if software is justified.
-- **G4 — Measurement feasibility:** Human evaluation has reliable rubrics, low burden and no unresolved privacy harms.
-- **G5 — Evidence discipline:** Null/mixed findings and safeguard failures remain visible and are not buried in a combined score.
+## Proposed release gates
 
-**Cancellation rule:** Stop implementation when the study cannot alter a concrete human decision; the manual workflow is better; methodological validity or ethical safeguards fail; or maintaining the project becomes an exercise in accumulating tooling instead of learning.
+**Gate G0 — Documentation integrity.** All empirical claims map to an evidence-register entry; inaccessible/unverified sources are marked; no GitHub PR opened by this commission.
 
-> **The Human Is The Upgrade. The AI Is The Instrument.**
+**Gate G1 — Minimum decision utility.** A named human decision, beneficiary, and falsification condition are documented. A manual notebook/spreadsheet protocol is tested or reasoned through; software has a specific additional benefit such as reproducible receipt verification across studies.
+
+**Gate G2 — Participant protection.** Ethics/IRB determination, consent, withdrawal, retention, recruitment, compensation, and external-model data handling are reviewed before any participant record exists.
+
+**Gate G3 — Technical integrity.** Valid/invalid schema fixtures, tamper checks, no-network dashboard check, HTML escaping, export redaction, migration replay, and CI pass on supported Python versions.
+
+**Gate G4 — Measurement feasibility.** Pilot demonstrates predeclared rater agreement, tolerable session time, acceptable delayed-test retention, valid randomization logs, and no unresolved privacy incident.
+
+**Gate G5 — Evidence discipline.** Confirmatory results are preregistered and report null/mixed outcomes. Productivity cannot outweigh a failed human safeguard by relabeling it success.
+
+## Explicit cancellation conditions
+
+Cancel implementation, or retain only the research documentation, if any one condition persists after a revision attempt: no concrete decision is changed; manual protocol yields the same information at materially lower cost; research cannot be ethically approved; measures cannot attain usable reliability; live data collection requires invasive surveillance; or early results demonstrate that the dashboard/activity artifacts distract from the human decision they were built to serve.
