@@ -9,6 +9,10 @@
 3. [Blind scoring and manual records](EXP-002_SCORING.md) — task-specific scoring rubric, separation of assignment key, minimized data ledger, missingness, adjudication, and toy dry-run.
 4. [Preflight and go/no-go checklist](EXP-002_PREFLIGHT.md) — tabletop rehearsal, reviewer sign-offs, known open decisions and protocol deviation ledger.
 
+## Phase 1C — executed synthetic code calibration
+
+The [calibration-003 execution record](calibration-003/RESULTS.md) documents an **executed standard-library-only** test of the three *public fictional code submissions*: eight illustrative inputs × three implementations. See [tests/test_exp002_calibration.py](../../tests/test_exp002_calibration.py). The tests provide an objective **code-behaviour oracle**, not approved rubric scores, a human rater, a stopwatch measurement, or experimental results. An unresolved question about oversized integer input and the draft scoring rubric is recorded for independent human review.
+
 ## Phase 1B — independent manual-validation kit (prepared, not completed)
 
 The [manual-validation-002 kit](manual-validation-002/README.md) includes public **synthetic** reviewer vignettes, blank independent scoring/adjudication/feedback CSV templates, a timed **human-operated** paper-versus-CSV procedure, and [review/ethics/build gates](manual-validation-002/DECISION_GATE.md). These are instruments to perform the next review, **not completed independent rater evidence or observed human timings**. The previous `REVISE` / **NO BUILD** decision remains in effect.
@@ -21,7 +25,7 @@ The agent created five fictional CSV worksheets and checked structural integrity
 
 ## Permitted next action
 
-Perform a **synthetic tabletop dry-run** of the proposed worksheets and rater packet. Record ambiguities, revisions, and time burden with fictitious IDs. Do not infer any human-learning outcome from it.
+Conduct the **actual human-operated, stopwatch-timed paper/CSV exercise** and obtain **two separately completed human calibration ratings** on the public fictional task examples, using the [Phase 1B kit](manual-validation-002/README.md). Keep original private worksheets and record anonymized methodological feedback; do not infer an AI-learning outcome or imply a live study has begun. The synthetic software calibration above is a supporting oracle only.
 
 ## Not yet authorized
 
