@@ -9,6 +9,10 @@
 3. [Blind scoring and manual records](EXP-002_SCORING.md) — task-specific scoring rubric, separation of assignment key, minimized data ledger, missingness, adjudication, and toy dry-run.
 4. [Preflight and go/no-go checklist](EXP-002_PREFLIGHT.md) — tabletop rehearsal, reviewer sign-offs, known open decisions and protocol deviation ledger.
 
+## Phase 1B — independent manual-validation kit (prepared, not completed)
+
+The [manual-validation-002 kit](manual-validation-002/README.md) includes public **synthetic** reviewer vignettes, blank independent scoring/adjudication/feedback CSV templates, a timed **human-operated** paper-versus-CSV procedure, and [review/ethics/build gates](manual-validation-002/DECISION_GATE.md). These are instruments to perform the next review, **not completed independent rater evidence or observed human timings**. The previous `REVISE` / **NO BUILD** decision remains in effect.
+
 ## Tabletop-001 — completed limited synthetic rehearsal
 
 [Open the documented synthetic tabletop rehearsal](tabletop-001/README.md), its [executed checks and unresolved cases](tabletop-001/RESULTS.md), and its [REVISE / no-build decision](tabletop-001/BUILD_DECISION.md).
