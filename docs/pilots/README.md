@@ -9,6 +9,10 @@
 3. [Blind scoring and manual records](EXP-002_SCORING.md) — task-specific scoring rubric, separation of assignment key, minimized data ledger, missingness, adjudication, and toy dry-run.
 4. [Preflight and go/no-go checklist](EXP-002_PREFLIGHT.md) — tabletop rehearsal, reviewer sign-offs, known open decisions and protocol deviation ledger.
 
+## Phase 1D — human validation handoff (ready; human results outstanding)
+
+The [Phase 1D review handoff](phase-1d/README.md) operationalizes the independent scoring and human-timed manual-method work. It includes a [proposed scoring amendment](phase-1d/RUBRIC_CHANGE_PROPOSAL.md), [two-person reviewer brief](phase-1d/INDEPENDENT_REVIEW_BRIEF.md), [operator stopwatch handoff](phase-1d/TIMED_OPERATOR_HANDOFF.md), [current Australian governance context](phase-1d/AUSTRALIAN_GOVERNANCE.md), and the [evidence gate register](phase-1d/GATE_REGISTER.md). **These are prepared materials, not completed independent human reviews, recorded human timing or ethics authorization.** The decision remains **REVISE / NO BUILD AUTHORIZED**.
+
 ## Phase 1C — executed synthetic code calibration
 
 The [calibration-003 execution record](calibration-003/RESULTS.md) documents an **executed standard-library-only** test of the three *public fictional code submissions*: eight illustrative inputs × three implementations. See [tests/test_exp002_calibration.py](../../tests/test_exp002_calibration.py). The tests provide an objective **code-behaviour oracle**, not approved rubric scores, a human rater, a stopwatch measurement, or experimental results. An unresolved question about oversized integer input and the draft scoring rubric is recorded for independent human review.
@@ -25,7 +29,7 @@ The agent created five fictional CSV worksheets and checked structural integrity
 
 ## Permitted next action
 
-Conduct the **actual human-operated, stopwatch-timed paper/CSV exercise** and obtain **two separately completed human calibration ratings** on the public fictional task examples, using the [Phase 1B kit](manual-validation-002/README.md). Keep original private worksheets and record anonymized methodological feedback; do not infer an AI-learning outcome or imply a live study has begun. The synthetic software calibration above is a supporting oracle only.
+Conduct the **actual human-operated, stopwatch-timed paper/CSV exercise** and obtain **two separately completed human calibration ratings** using the [Phase 1D handoff](phase-1d/README.md) and the original [Phase 1B kit](manual-validation-002/README.md). Preserve private original worksheets; publish only a screened, non-identifying report after actual work. The synthetic software calibration remains a supporting oracle, not evidence that people learned anything.
 
 ## Not yet authorized
 
