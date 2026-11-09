@@ -1,0 +1,5 @@
+packet_id,rater_opaque_id,rubric_version,scoring_status,C,R,E,missingness_code,ambiguity_code,reason_minimized
+MV-A,,DRAFT-0.1,,,,,,,
+MV-B,,DRAFT-0.1,,,,,,,
+MV-C,,DRAFT-0.1,,,,,,,
+MV-D,,DRAFT-0.1,,,,,,,
