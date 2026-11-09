@@ -1,0 +1,6 @@
+study_id,assigned_arm,allocation_block,packet_id,visit,status,consent_version
+SYN-001,S,B0,PKT-001,delayed,submitted,DEMO-NOT-CONSENT
+SYN-002,H,B0,PKT-002,delayed,missing,DEMO-NOT-CONSENT
+SYN-003,A,B0,PKT-003,delayed,withdrawn,DEMO-NOT-CONSENT
+SYN-004,S,B0,PKT-004,delayed,rejected_unblinding,DEMO-NOT-CONSENT
+SYN-005,S,B0,NONE,practice,policy_leakage,DEMO-NOT-CONSENT
