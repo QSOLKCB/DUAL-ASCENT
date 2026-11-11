@@ -3,6 +3,7 @@ name: Deploy DUAL-ASCENT to GitHub Pages
 on:
   push:
     branches: [main]
+    # Deliberately no paths filter: every main push, even README changes, redeploys.
   workflow_dispatch:
 
 permissions:
