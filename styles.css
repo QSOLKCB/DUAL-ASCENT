@@ -289,3 +289,7 @@ textarea:disabled {opacity:.55;}
   html {scroll-behavior:auto;}
   *,*::before,*::after {animation-duration:.01ms !important; transition-duration:.01ms !important;}
 }
+
+.mission-links {display:flex;gap:10px;flex-wrap:wrap;margin:16px 28px 0;}
+.mission-links a {font:700 10px/1.4 var(--mono);color:var(--accent);border:1px solid #496e61;padding:8px 11px;text-decoration:none;}
+.mission-links a:hover {background:#16362d;color:#fff;}
