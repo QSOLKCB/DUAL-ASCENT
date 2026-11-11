@@ -41,7 +41,7 @@ Open **http://localhost:8000/**. The static page can also be opened directly fro
 
     uv run --no-project python -I -B -m unittest discover -s tests -v
 
-[GitHub Actions](https://github.com/QSOLKCB/DUAL-ASCENT/actions/workflows/site-checks.yml) runs the Python checks on PRs and on merged main. GitHub Pages deployment is separately configured in the repository's Pages settings: select **Deploy from a branch → main → /(root)**. This read-only CI workflow cannot publish an unmerged PR branch.
+[GitHub Actions](https://github.com/QSOLKCB/DUAL-ASCENT/actions/workflows/site-checks.yml) runs the Python checks on PRs and on merged main. **GitHub Pages auto-deployment:** the [Pages workflow](.github/workflows/pages.yml) tests and publishes the static game on **every push to `main`**, including README-only changes. In **Settings → Pages**, select **Source: GitHub Actions**. PR branches cannot publish; merging this deployment PR is the first main-branch trigger.
 
 ## Research status
 
