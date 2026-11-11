@@ -50,9 +50,10 @@ The site reflects the five HSC levels, the optional EXP-003A human-only writing/
 
 - JavaScript passed V8 syntax parsing.
 - An in-memory **mock-DOM interaction rehearsal** passed **18 assertions** covering starting state, locked Level 4 preview, first three level completions, unlocking Level 4, local note storage, and cascading reset.
+- A separate in-memory mock-DOM rehearsal passed **8 more assertions** covering versioned JSON export, valid import, inert note preservation, out-of-order/oversized import rejection, preservation of existing state after rejected import, and full reset.
 - Static GitHub source inspection confirmed all JavaScript-referenced element IDs occur in HTML, all loaded styles/scripts are local, and no app.js fetch/XHR/WebSocket/eval/innerHTML patterns were present.
 
-These checks are **not** real browser screenshots, comprehensive accessibility testing, import/export browser testing, or a live human-learning evaluation. The CI workflow status needs independent verification on the pull request. No Pages deployment is claimed until the merge and actual Pages build succeed.
+These checks are **not** real browser screenshots, comprehensive accessibility testing, **real-browser** import/export validation, or a live human-learning evaluation. The CI workflow status needs independent verification on the pull request. No Pages deployment is claimed until the merge and actual Pages build succeed.
 
 **Reviewer smoke-test suggestions:** open through a local HTTP server, test narrow/desktop widths and keyboard access, verify Level 4 cannot be self-attested before Levels 1–3, complete the first three levels, save/refresh, export/import JSON, reject malformed and out-of-order imports, reset Level 1 and confirm Level 4 relocks, inspect optional side quest and read-only research gates.
 
