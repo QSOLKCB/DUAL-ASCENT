@@ -8,9 +8,16 @@ The browser site is a **voluntary gamified interface** to the challenges propose
 - **styles.css** — responsive self-hosted styling; no external fonts, images, frameworks or stylesheets.
 - **app.js** — five-level curriculum, self-attested objectives, local journal, import/export, sequential progress.
 - **tests/test_site_contracts.py** — Python standard-library static contracts.
-- **.github/workflows/site-checks.yml** — read-only tests on PRs and main; **not a deployment workflow**.
+- **.github/workflows/site-checks.yml** — read-only tests on PRs and main.
+- **.github/workflows/pages.yml** — verifies and publishes the three static site assets on **every push to main**, including changes only to README or the roadmap. There is intentionally **no paths filter**; a manual workflow dispatch from an unmerged branch is also blocked.
 
-For GitHub Pages, configure **Settings → Pages → Build and deployment → Deploy from a branch → main → /(root)** after merging the site PR. Do not manually deploy an unmerged feature branch. The read-only CI workflow contains no Pages publishing job.
+## Automatic GitHub Pages deployment
+
+In **Settings → Pages → Build and deployment**, select **Source: GitHub Actions**. Merge the deployment workflow PR into `main`; that push triggers the first deployment, provided the repository permits Pages deployment from GitHub Actions and the `github-pages` environment allows main.
+
+The workflow runs the Python standard-library tests, packages only `index.html`, `styles.css` and `app.js`, then publishes through GitHub's Pages Actions. **Every subsequent main push** repeats the tests and deployment, even if only Markdown documentation changes. The published assets still reflect the committed site code.
+
+If needed, manually run **Actions → Deploy DUAL-ASCENT to GitHub Pages → Run workflow → main**. The two explicit main-branch guards prevent a dispatch from any other branch from publishing. Review both `build` and `deploy` job results and then verify https://qsolkcb.github.io/DUAL-ASCENT/ . Passing the separate site-checks workflow does not prove the Pages deployment succeeded.
 
 Local execution:
 
