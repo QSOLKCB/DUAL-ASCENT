@@ -25,6 +25,7 @@
 | `SECURITY_PRIVACY.md` | Consent/privacy threat model and governance limits. |
 | `TEST_PLAN.md` | Executed, static, proposed, and empirical-validation boundaries. |
 | `ROADMAP.md` | Gates, sequencing, and cancellation conditions. |
+| `EXP-005_CASE_INTAKE_001.md` | Post-rev3 qualitative case intake: agent persistence and service quota interruption, with source hashes, counterinterpretations and methodological limits. |
 | `DECISION_RECORD.md` | REVISE rationale and manual-pilot-first decision. |
 | `REVISION_LOG.md` | Incremental correction traceability across passes. |
 | `THIRD_PASS_AUDIT.md` | Rev2 reproductions, Rev3 closures, regression mapping, and outstanding findings. |
