@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0b1018">
+  <meta name="description" content="DUAL-ASCENT: a five-level, offline-first human learning challenge. No AI until Level 4. The Human Is The Upgrade.">
+  <title>DUAL-ASCENT | The Human Is The Upgrade</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the learning challenge</a>
+  <div class="scanline" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="DUAL-ASCENT home">
+        <span class="brand-mark" aria-hidden="true">D<span class="brand-notch">/</span>A</span>
+        <span class="brand-copy"><strong>DUAL<span class="accent">/</span>ASCENT</strong><small>HUMAN–AI LEARNING LAB</small></span>
+      </a>
+      <nav class="nav-links" aria-label="External project resources">
+        <a href="#curriculum">MISSIONS</a>
+        <a href="#research">RESEARCH HQ</a>
+        <a href="https://github.com/QSOLKCB/DUAL-ASCENT/issues/7" target="_blank" rel="noopener noreferrer">ISSUE #7 <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/QSOLKCB/DUAL-ASCENT" target="_blank" rel="noopener noreferrer">GITHUB <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" id="top" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <div class="eyebrow"><span class="signal" aria-hidden="true"></span> FIELD EXPERIMENT / HSC-001—005 <span class="eyebrow-divider">·</span> SELF-DIRECTED</div>
+        <h1 id="hero-title">THE HUMAN<br>IS THE <span class="text-glow">UPGRADE<span class="dot">.</span></span></h1>
+        <p class="hero-lede">Five levels. Start with your own mind, your own hands, and the documentation. Earn new ways to collaborate without giving up the controls.</p>
+        <div class="unlock-statement">
+          <span class="unlock-icon" aria-hidden="true">⌁</span>
+          <span>The AI Doesn't Unlock Until Level 4.</span>
+        </div>
+        <div class="hero-actions">
+          <a class="primary-link" href="#curriculum">ENTER THE CHALLENGE <span aria-hidden="true">↗</span></a>
+          <a class="secondary-link" href="#protocol">HOW THE RULES WORK</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Illustration of five ascending learning levels, with artificial intelligence introduced at level four">
+        <div class="visual-corner top-left" aria-hidden="true"></div>
+        <div class="visual-corner bottom-right" aria-hidden="true"></div>
+        <div class="visual-label"><span>PROTOCOL STATUS</span><span>01 / 05</span></div>
+        <div class="ascent-graphic" aria-hidden="true">
+          <div class="ascent-axis"></div>
+          <div class="ascent-step step-one"><i>01</i><b>HUMAN</b></div>
+          <div class="ascent-step step-two"><i>02</i><b>HUMAN</b></div>
+          <div class="ascent-step step-three"><i>03</i><b>HUMAN</b></div>
+          <div class="ascent-step step-four"><i>04</i><b>AI HINTS</b></div>
+          <div class="ascent-step step-five"><i>05</i><b>TOGETHER</b></div>
+        </div>
+        <div class="visual-bottom"><span>CAPABILITY, NOT DEPENDENCE</span><span class="terminal-cursor" aria-hidden="true">_</span></div>
+      </div>
+    </section>
+
+    <section class="status-bar" aria-label="Your locally stored challenge progress">
+      <div class="shell status-grid">
+        <div class="stat"><small>LEVELS ATTESTED</small><strong id="statCompleted" aria-live="polite">0 / 5</strong></div>
+        <div class="stat"><small>GAME XP <span class="help-symbol" title="XP tracks self-reported game progress, not measured competence.">ⓘ</span></small><strong id="statXp">000 <span>XP</span></strong></div>
+        <div class="stat"><small>AI ASSISTANCE</small><strong id="statAi" class="locked-label">LOCKED <span>01–03</span></strong></div>
+        <div class="stat progress-stat"><small>ASCENT PROGRESS</small><div class="progress-track" role="progressbar" id="overallProgress" aria-label="Self-reported levels completed" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0"><div id="progressFill"></div></div><span id="progressCaption">Your journey starts here.</span></div>
+      </div>
+    </section>
+
+    <section class="shell curriculum" id="curriculum" aria-labelledby="curriculum-title">
+      <div class="section-heading">
+        <div><p class="section-kicker">01 // TRAINING SIMULATOR</p><h2 id="curriculum-title">CHOOSE YOUR <span class="accent">ASCENT</span></h2><p>Learn independently first. Guided AI arrives later. No shortcuts through the evidence gates.</p></div>
+        <span class="module-tag"><span class="signal"></span> OFFLINE / NO ACCOUNT</span>
+      </div>
+
+      <div class="learning-layout">
+        <aside class="mission-sidebar" aria-label="Level selection">
+          <div class="panel-topline"><span>MISSION SELECT</span><span>01—05</span></div>
+          <div id="levelNavigation" class="mission-nav">
+            <noscript>
+              <p>JavaScript enables local progress tracking. Read the challenges in <a href="https://github.com/QSOLKCB/DUAL-ASCENT/issues/7#issuecomment-6804771872">Issue #7</a>: Rust/HTML, IRC, Perl, Python with hints, and collaborative exploration.</p>
+            </noscript>
+          </div>
+          <div class="side-quest-callout">
+            <span class="mini-kicker">BONUS MISSION</span>
+            <strong>THE HUMAN IS THE AUTHOR</strong>
+            <p>Write something without AI. Test authorship predictions later.</p>
+            <button type="button" id="sideQuestButton" class="text-button">VIEW SIDE QUEST <span aria-hidden="true">↗</span></button>
+          </div>
+        </aside>
+
+        <div class="mission-area">
+          <article class="mission-panel" id="missionPanel" aria-labelledby="missionTitle">
+            <div class="panel-topline"><span id="missionCode">HSC-001 / HUMAN MODE</span><span id="missionState">AVAILABLE</span></div>
+            <div class="mission-heading">
+              <div><p class="mission-eyebrow" id="missionCategory">LEVEL 01 // NO AI</p><h3 id="missionTitle">The Independent Learner</h3><p id="missionDescription">Start with the documentation, not a chatbot.</p></div>
+              <span class="big-level" id="bigLevel" aria-hidden="true">01</span>
+            </div>
+            <div class="mission-rule"><span class="rule-icon" id="ruleIcon" aria-hidden="true">◈</span><div><strong id="missionPolicyTitle">NO GENERATIVE AI</strong><p id="missionPolicyDescription">Documentation and conventional references are permitted.</p></div></div>
+            <div class="mission-stats"><span><b id="missionTaskCount">0 / 0</b> OBJECTIVES</span><span><b>+100</b> GAME XP</span><span id="missionAccess">INDEPENDENT</span></div>
+            <h4 class="block-title">MISSION OBJECTIVES <small>CHECK OFF WHAT YOU HAVE ACTUALLY DONE</small></h4>
+            <div id="lockedMessage" class="locked-overlay" hidden></div>
+            <div id="questList" class="quest-list"></div>
+            <div id="missionLinks" class="mission-links"></div>
+            <div class="evidence-section">
+              <div class="evidence-heading"><h4 class="block-title">FIELD JOURNAL</h4><span>PRIVATE TO THIS BROWSER</span></div>
+              <label for="fieldNotes">What did you build, change, learn or struggle with?</label>
+              <textarea id="fieldNotes" rows="3" maxlength="2000" placeholder="Your own notes. Optional, but useful for reflecting on what you actually learned."></textarea>
+              <label for="sourceNotes">References or evidence notes (optional)</label>
+              <textarea id="sourceNotes" rows="2" maxlength="1000" placeholder="Documentation, commands, tests, local artifact path (avoid secrets or personal data)..."></textarea>
+              <div class="form-footer">
+                <span id="saveNotice" role="status" aria-live="polite">Nothing is submitted to a server.</span>
+                <button class="outline-button" type="button" id="saveNotes">SAVE NOTES</button>
+              </div>
+            </div>
+            <div class="action-bar">
+              <button id="markComplete" class="action-primary" type="button" disabled>ATTEST LEVEL COMPLETE <span aria-hidden="true">↗</span></button>
+              <button id="resetCurrent" class="action-secondary" type="button">RESET THIS LEVEL</button>
+            </div>
+            <div class="integrity-note" id="integrityNote">Completion is self-reported. These controls do not verify skill, authorship, consent or research-readiness.</div>
+          </article>
+
+          <section class="sidequest-panel" id="sideQuestPanel" hidden aria-labelledby="sideQuestTitle">
+            <div class="panel-topline"><span>EXP-003A / OPTIONAL CHALLENGE</span><span>NOT A RESEARCH GATE</span></div>
+            <h3 id="sideQuestTitle">THE HUMAN IS THE AUTHOR.</h3>
+            <p>Write anything—fiction, comedy, research, an absurd declaration of mathematical invention—entirely without generative AI. Preserve the first completed version. If you wish, arrange a later blinded comparison with AI-generated samples, record the prediction and confidence first, then reveal the key.</p>
+            <p><strong>Important:</strong> A writing-style guess is not proof of authorship, and this optional challenge does not clear Issue #7's EXP-002 independent review or timing requirements.</p>
+            <div class="sidequest-actions">
+              <a href="https://github.com/QSOLKCB/DUAL-ASCENT/issues/7#issuecomment-6804580813" target="_blank" rel="noopener noreferrer">READ THE FULL PROTOCOL <span aria-hidden="true">↗</span></a>
+              <button type="button" id="closeSideQuest" class="outline-button">CLOSE SIDE QUEST</button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="shell protocol-section" id="protocol" aria-labelledby="protocol-title">
+      <div class="section-heading"><div><p class="section-kicker">02 // THE RULEBOOK</p><h2 id="protocol-title">PROGRESS WITH <span class="accent">INTEGRITY</span></h2></div></div>
+      <div class="rule-grid">
+        <article class="info-card"><span class="info-number">01</span><h3>HUMAN FIRST</h3><p>Levels 1–3 permit documentation, manuals and conventional search—not generative AI. The website cannot police external tools: your declaration is the rule.</p></article>
+        <article class="info-card"><span class="info-number">02</span><h3>SHOW YOUR WORK</h3><p>Save notes locally, describe errors and run an unassisted variation. Checks and XP reflect self-attestation, never externally measured competence.</p></article>
+        <article class="info-card"><span class="info-number">03</span><h3>AI AT LEVEL FOUR</h3><p>Level 4 allows only hints and explanations. Level 5 allows full collaboration with transparent attribution and independent human follow-up.</p></article>
+      </div>
+    </section>
+
+    <section class="shell research-section" id="research" aria-labelledby="research-title">
+      <div class="research-copy">
+        <p class="section-kicker">03 // RESEARCH HQ</p>
+        <h2 id="research-title">A GAME, <span class="accent">NOT A CLAIM.</span></h2>
+        <p>This experience translates the five Human Skill Challenges and the optional authorship blind test from <a href="https://github.com/QSOLKCB/DUAL-ASCENT/issues/7" target="_blank" rel="noopener noreferrer">Issue #7</a> into a local learning game.</p>
+        <p>The underlying research remains at <strong>REVISE / NO BUILD AUTHORIZED</strong> for an EXP-002 participant-study platform. Completing levels here cannot close that issue or establish a human-learning effect.</p>
+        <div class="research-links">
+          <a href="https://github.com/QSOLKCB/DUAL-ASCENT/issues/7" target="_blank" rel="noopener noreferrer">HUMAN VALIDATION ISSUE ↗</a>
+          <a href="https://github.com/QSOLKCB/DUAL-ASCENT/blob/main/docs/research/ROADMAP.md" target="_blank" rel="noopener noreferrer">RESEARCH ROADMAP ↗</a>
+          <a href="https://github.com/QSOLKCB/DUAL-ASCENT/blob/main/docs/research/EXP-005_CASE_INTAKE_001.md" target="_blank" rel="noopener noreferrer">ORCHESTRATOR PARADOX ↗</a>
+        </div>
+      </div>
+      <aside class="research-gates" aria-label="Actual research requirements, not game objectives">
+        <div class="panel-topline"><span>EXP-002 / HUMAN REVIEW</span><span>UNRESOLVED</span></div>
+        <h3>REAL-WORLD GATES</h3>
+        <ul>
+          <li><span>01</span> Two independent human rubric reviewers <b>OPEN</b></li>
+          <li><span>02</span> Actual human-timed manual comparison <b>OPEN</b></li>
+          <li><span>03</span> Method and scoring review <b>OPEN</b></li>
+          <li><span>04</span> Applicable ethics / consent determination <b>OPEN</b></li>
+          <li><span>05</span> Separate build / no-build decision <b>OPEN</b></li>
+        </ul>
+        <p>This panel is intentionally read-only. A game button cannot approve a scientific study.</p>
+      </aside>
+    </section>
+
+    <section class="shell data-section" aria-labelledby="data-title">
+      <div><p class="section-kicker">04 // LOCAL SAVE FILE</p><h2 id="data-title">YOU OWN YOUR <span class="accent">PROGRESS.</span></h2><p>No accounts, cookies, trackers, AI APIs, remote assets or telemetry. Game state stays in this browser unless you export it. Nothing is automatically pushed to GitHub.</p></div>
+      <div class="data-tools">
+        <button type="button" class="outline-button" id="exportProgress">EXPORT JSON <span aria-hidden="true">↓</span></button>
+        <label class="file-button" for="importProgress">IMPORT JSON <span aria-hidden="true">↑</span></label>
+        <input type="file" id="importProgress" accept=".json,application/json" class="visually-hidden">
+        <button type="button" class="danger-button" id="resetAll">RESET ALL</button>
+        <span id="dataStatus" role="status" aria-live="polite">Saved locally when browser storage permits. Export before clearing browser data.</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner"><div><strong>DUAL<span class="accent">/</span>ASCENT</strong><span>THE HUMAN IS THE UPGRADE.</span></div><div><span>QSOL-IMC · APACHE-2.0</span><span>INDEPENDENCE IS THE ACHIEVEMENT.</span></div></div>
+  </footer>
+</body>
+</html>

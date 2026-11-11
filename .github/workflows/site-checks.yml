@@ -1,0 +1,26 @@
+name: DUAL-ASCENT Site & Research Tests
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Standard-library checks (Python 3.13)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v5
+
+      - name: Set up pinned Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+
+      - name: Validate offline site contracts and synthetic calibration
+        run: python -I -B -m unittest discover -s tests -v

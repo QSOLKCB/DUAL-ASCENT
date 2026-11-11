@@ -1,19 +1,61 @@
 # DUAL-ASCENT
-The Human Is The Upgrade. Two intelligences. One expanding horizon.  An Apache-2.0 open-source laboratory for investigating and documenting what happens when human expertise and AI assistance improve together.
 
+**The Human Is The Upgrade.** Two intelligences. One expanding horizon.
 
-A successful AI collaboration is not one where the human becomes increasingly dependent on the machine. It's one where the human becomes increasingly capable, while the machine becomes increasingly useful.
+### 🎮 The AI Doesn't Unlock Until Level 4.
 
-## Research status — Commission 001, revision three
+**Learning site:** [qsolkcb.github.io/DUAL-ASCENT](https://qsolkcb.github.io/DUAL-ASCENT/) (available after merging and selecting the repository root for GitHub Pages).
 
-**Decision: REVISE.** DUAL-ASCENT is currently a research/documentation project, not an evaluated product or an established improvement in human capability. The independent research commission recommends reviewing the protocols and running an ethics-appropriate **manual EXP-002 pilot** before approving implementation.
+The GitHub Pages landing site turns the **five Human Skill Challenges** in [Issue #7](https://github.com/QSOLKCB/DUAL-ASCENT/issues/7#issuecomment-6804771872) into a progressive learning game. The first three levels are AI-free. At Level 4, the human may ask for tutor hints. At Level 5, the human chooses a new skill to explore with AI as a collaborator.
 
-See the [research index](docs/research/README.md), [evidence register](docs/research/EVIDENCE_REGISTER.md), [decision record](docs/research/DECISION_RECORD.md), [roadmap and experimental gates](docs/research/ROADMAP.md), and [third-pass validation report](docs/research/VALIDATION_REPORT.md).
+| Game level | Challenge | Assistance allowed |
+|---|---|---|
+| HSC-001 | Rust getting started **and** a pure HTML page | No generative AI |
+| HSC-002 | Research and run a **localhost-only** IRC server | Search and manuals, no AI mode |
+| HSC-003 | Write, run and alter a simple Perl text program | No generative AI |
+| HSC-004 | Build a Python program with *hints*, then alter it unaided | AI hints, not complete solutions |
+| HSC-005 | Investigate a skill the human hasn't learned yet | Full transparent human–AI collaboration |
 
-**EXP-005 — The Orchestrator Paradox** is a *provisional post-revision-three proposal* in the roadmap, not a completed or independently validated study. No participant data, telemetry, diagnostic claims, AI-service calls, or implementation source are included in the research-documentation PR. Software regression tests verify limited synthetic contracts, not human outcomes.
+**Optional side quest:** [EXP-003A — The Human Is The Author](https://github.com/QSOLKCB/DUAL-ASCENT/issues/7#issuecomment-6804580813). Create something independently, then separately evaluate AI versus human authorship predictions under blinded conditions. A writing-style guess is not proof of provenance.
 
-## EXP-002 manual-pilot preparation — proposed PR #2
+### Local progress is not research evidence
 
-The next research deliverable is a [review-only manual pilot kit](docs/pilots/README.md) covering the proposed three-arm study of **human-only**, **answer-generating AI**, and **scaffolded AI** learning, with a 7–14 day unaided transfer assessment. It includes illustrative synthetic task forms, blind-scoring templates, privacy boundaries, and a preflight/decision checklist.
+The site uses only **index.html**, **styles.css** and **app.js**. It has **no framework, npm, hosted database, telemetry, third-party runtime scripts, AI provider integration or account**. Game progress saves in the browser's localStorage when available; users can export/import a JSON save. Browser/device backups or extensions may access local data, so never put secrets or private study records into game notes.
 
-These materials **do not authorize participant recruitment** or claim that an experiment has been run. Written applicable ethics determination, consent, task and rubric validation, qualified researcher oversight, pre-registration and data handling approval are still required. No code, model integrations or human records are added. The governing [REVISE decision](docs/research/DECISION_RECORD.md) remains unchanged.
+- Level gates are an **honour system**, not a mechanism to block external AI tools.
+- XP is **self-reported game progress**, not verified skill, authorship or a research endpoint.
+- The website does **not gather human-participant data** or authorize a study.
+- The independent human reviewers, timed manual comparison, ethics determination and BUILD/NO BUILD decision in Issue #7 **remain open**.
+
+See [site operations, deployment and privacy](docs/site/README.md).
+
+## Run locally
+
+From the repository root:
+
+    uv run --no-project python -m http.server 8000
+
+Open **http://localhost:8000/**. The static page can also be opened directly from a file URL, but some browsers restrict local storage for file URLs.
+
+**Dependency-free checks:**
+
+    uv run --no-project python -I -B -m unittest discover -s tests -v
+
+[GitHub Actions](https://github.com/QSOLKCB/DUAL-ASCENT/actions/workflows/site-checks.yml) runs the Python checks on PRs and on merged main. GitHub Pages deployment is separately configured in the repository's Pages settings: select **Deploy from a branch → main → /(root)**. This read-only CI workflow cannot publish an unmerged PR branch.
+
+## Research status
+
+**Controlling scientific decision: REVISE.** DUAL-ASCENT is an open-source research and documentation programme, not a validated learning intervention, cognitive-improvement product or authorized human-participant study.
+
+- [Independent research index](docs/research/README.md)
+- [Evidence register](docs/research/EVIDENCE_REGISTER.md)
+- [Research decision record](docs/research/DECISION_RECORD.md)
+- [Roadmap, including provisional EXP-005 — The Orchestrator Paradox](docs/research/ROADMAP.md)
+- [EXP-002 Phase 1D independent human-validation handoff](docs/pilots/phase-1d/README.md)
+- [Issue #7 — outstanding independent human review](https://github.com/QSOLKCB/DUAL-ASCENT/issues/7)
+
+The initial research foundation remains in the [immutable v0.1.0-research.1 pre-release](https://github.com/QSOLKCB/DUAL-ASCENT/releases/tag/v0.1.0-research.1). The new game is a **separate, voluntary learning interface**; it does not alter the frozen research snapshot.
+
+**License:** Apache-2.0 (see [LICENSE](LICENSE)).
+
+> A successful AI collaboration makes the human more capable—not more dependent.
