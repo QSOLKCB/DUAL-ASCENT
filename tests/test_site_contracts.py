@@ -79,7 +79,7 @@ class SiteContractTests(unittest.TestCase):
         self.assertIn("localStorage", JS)
         self.assertIn("cleanState", JS)
         self.assertIn("completed = true", JS)
-        self.assertIn("No generative", JS.lower().replace("no generative", "No generative"))
+        self.assertIn("NO GENERATIVE AI", JS)
 
     def test_no_auto_network_or_remote_executable_assets(self):
         for fragment in ("fetch(", "XMLHttpRequest", "WebSocket(",
@@ -93,7 +93,7 @@ class SiteContractTests(unittest.TestCase):
             self.assertIn("noreferrer", attrs.get("rel", ""))
 
     def test_css_mobile_and_accessibility(self):
-        self.assertIn("@media (max-width:520px)", CSS.replace(" ", ""))
+        self.assertIn("@media(max-width:520px)", CSS.replace(" ", ""))
         self.assertIn("prefers-reduced-motion", CSS)
         self.assertIn(":focus-visible", CSS)
         self.assertIn('.skip-link', CSS)
