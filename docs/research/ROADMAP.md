@@ -92,6 +92,12 @@ Do **not** combine these into a single 'human intelligence', 'AI dependency' or 
 - **G5-D — Preregistration and participant protection:** Obtain applicable review/consent and prespecify outcome contrasts, sample-size rationale, exclusion, missingness, order effects and stop rules before any live human study.
 - **G5-E — Build decision:** Software is justified only if validated manual methods cannot reproducibly support the named decision with lower burden. Otherwise retain the protocol as documentation.
 
+### Qualitative evidence intake — post-completion and quota limits
+
+[EXP-005 Case Intake 001](EXP-005_CASE_INTAKE_001.md) documents **two contributor-supplied transcript excerpts**: continuing optional verification after a successful merge/deployment, and an apparent service-usage-limit interruption near a requested release-notes handoff. Source-file SHA-256 values and line references are recorded; the raw chats are deliberately **not published**. Both referenced GitHub PRs were independently confirmed merged.
+
+**Evidence status: qualitative, unverified chronology; not a controlled study.** Neither case establishes a number of concurrent agents, a general overload threshold, provider usage totals or causation. Candidate additions to the future study are explicit completion criteria, optional-check authorization, residual-risk handoff, and graceful quota-limited artifact delivery. These **do not supersede** G5-A–G5-E or authorize a new application.
+
 ### Explicit non-goals
 
 No automatic observation of employee activity, scraping browser tabs, covert time tracking, model-personality diagnoses, addiction/psychosis labels, performance surveillance, agent-count leaderboard, or unsupported 'ideal number of agents' recommendation.
