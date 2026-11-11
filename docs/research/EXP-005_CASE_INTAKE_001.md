@@ -67,7 +67,7 @@ These cases suggest **two separate constructs**, not a single anthropomorphic "A
 | **Budget-constrained handoff failure** | The session reaches a provider usage limit before a required deliverable is made durably available to the user. | A user-initiated cancellation, a task legitimately blocked on external review, or the normal end of a successful run. |
 | **Oversight communication load** | The human receives repeated progress or validation messages that do not change a predeclared decision. | A necessary failure report or one concise completion summary. |
 
-A contributor's reaction (“Claude gives me the shits”) is valid *qualitative preference evidence*, not a clinical metric, universal user preference or demonstrated cognitive impairment.
+The contributor reported frustration with continued agent updates and usage caps. That is qualitative preference evidence, not a clinical metric, universal user preference or demonstrated cognitive impairment.
 
 ## Proposed EXP-005 protocol extension (NOT an executed experiment)
 
